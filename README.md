@@ -1,20 +1,36 @@
-Retail Sales Data Analysis(SQL Practice)
+# ## Retail Sales Analysis - SQL Practice
+#  My SQL Project
 
-Project Overview: 
-This project focuses on solving a series of data analysis problems using the SQL Practice Dataset 1(Easy) + Queries from Kaggle.The goal is to practice writing efficient SQL queries to extract meaningful business insights from retail sales data.
+## Overview
+This project involves analyzing a retail sales datasetto extract meaningful business insights. I performed data exploration and answered key business questions using SQL queries to understand customer density, revenue drivers, and seasonal sales trends.  
 
-Dataset Information: 
-Dataset Name: SQL Practice Dataset 1(Easy) + Queries 
-Description: A beginner friendly relational dataset containing multiple tables designed for learning and practicing SQL.
-Key Focused: Retail Sles and Practice Question.
-Source Link: https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries/discussion/680723 
+## Features
+- Well-structured schema with tables, relationships, and constraints
+- Sample queries for data retrieval and analysis
+- Example dataset for testing
+- Best practices in indexing and normalization
 
-Tools Used: 
-SQL Workbench: For writing and exceuting queries.
-Kaggle Datasets
+## Getting Started
+## Prerequisites
+- Install [MySQL/PostgreSQL/SQLite] (choose your DB engine)
+- Basic knowledge of SQL
 
-Key Questions Addressed: 
-In this respository, I have solved several practice questions, including:
-Which are the top ten cities with the highest customer density?
-Which product category is responsible for generating the highest total revenue?
-Which month of the year experiences the highest volumev of sales?
+## Dataset Information: 
+- Dataset Name: SQL Practice Dataset 1(Easy) + Queries 
+- Description: A beginner friendly relational dataset containing multiple tables designed for learning and practicing SQL.
+- Key Focused: Retail Sles and Practice Question.
+- Source Link: https://www.kaggle.com/datasets/nudratabbas/sql-practice-dataset-1-easy-queries/discussion/680723 
+
+##  Tools Used: 
+- MY SQL Workbench 8.0
+- Kaggle Datasets
+
+## Key Insights: 
+- Sheffield city has the highest customer density, making it a prime location for new store openings.
+- The category of product Monitor 55 is the most profitable product with total sale of 201 units.
+- Sales typically peak in January. 
+
+## How to Run
+1. Download the dataset from Kaggle.
+2. Import the .csv file into your sql environment.
+3. Execute the queries provided in the Query_2.sql file.
