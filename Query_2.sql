@@ -61,12 +61,12 @@ SELECT c.city, sum(p.price*o.quantity) AS "TOTAL REVENUE"
 SELECT c.customer_id, SUM(o.quantity*p.price) AS TOTAL_SPENDING
        FROM customers c
        JOIN orders o ON c.customer_id=o.customer_id
-	   JOIN productsp ON o.product_id=p.product_is
+	   JOIN products p ON o.product_id=p.product_id
        GROUP BY c.customer_id
 	   ORDER BY TOTAL_SPENDING DESC
 	   LIMIT 10;
 -- WHICH MONTH HAS THE HIGHEST SALE       
-SELECT MONTHNAME(c.signup_date) AS month_name,
+SELECT MONTHNAME(o.order_date) AS month_name,
       SUM(o.quantity*p.price) AS total_monthly_sales
 	  FROM orders o        
       JOIN products p ON o.product_id=p.product_id
@@ -82,12 +82,12 @@ SELECT AVG(customer_total_spend) AS average_spending_per_customer
             JOIN products p ON o.product_id=p.product_id
 			GROUP BY c.customer_id
 )           AS customer_spend_table;
--- THIS WILL TELL THAT WHICH PRODUCT CATEGORY SELLS MOST UNITS
+-- THIS WILL TELL THAT WHICH PRODUCT CATEGORY SALES MOST UNITS
 SELECT p.category AS product_category, SUM(o.quantity) AS total_units_sold
-      FROM products p 
-      JOIN orderso ON p.product_id=o.product_id
+      FROM products p
+      JOIN orders  o ON p.product_id=o.product_id 
       GROUP BY p.category
-      ORDER BY total_units_solds DESC
+      ORDER BY total_units_sold DESC
       LIMIT 1;
 -- WHICH IS THE MOST COMMON PAYMENT METHOD
 SELECT payment_method, COUNT(*) AS total_usuage
