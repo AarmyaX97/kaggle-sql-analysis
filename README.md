@@ -33,4 +33,4 @@ This project involves analyzing a retail sales datasetto extract meaningful busi
 ## How to Run
 1. Download the dataset from Kaggle.
 2. Import the .csv file into your sql environment.
-3. Execute the queries provided in the Query_2.sql file.
+3. Execute the queries provided in the schema.sql file.
